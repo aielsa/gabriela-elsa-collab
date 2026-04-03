@@ -56,6 +56,7 @@
     font-size: 11px; font-weight: 700; letter-spacing: 3px;
     text-transform: uppercase; margin-bottom: 20px;
   }
+  .name-line { white-space: nowrap; }
   .hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700;
@@ -182,7 +183,8 @@
   @media (max-width: 640px) {
     .container { padding: 16px 12px; }
     .hero { padding: 36px 12px 30px; }
-    .hero h1 { font-size: 2rem; }
+    .name-line { white-space: nowrap; }
+  .hero h1 { font-size: 2rem; }
     .hero-names { flex-direction: column; gap: 8px; }
     .hero-names .x { display: none; }
     .nav-pills {
@@ -204,7 +206,8 @@
     .our-description { padding: 12px; }
   }
   @media (max-width: 380px) {
-    .hero h1 { font-size: 1.7rem; }
+    .name-line { white-space: nowrap; }
+  .hero h1 { font-size: 1.7rem; }
     .reel-number { font-size: 1.3rem; }
     .video-container { max-height: 280px; }
   }
@@ -214,7 +217,7 @@
 <div class="container">
   <div class="hero">
     <div class="hero-badge">✨ Collab Dashboard ✨</div>
-    <h1>Elsa Del Pino × Gabriela Short</h1>
+    <h1><span class="name-line">Elsa Del Pino</span> <span class="name-line">× Gabriela Short</span></h1>
     <div class="hero-names">
       <span class="name">🤖 The AI Strategist</span>
       <span class="x">×</span>
