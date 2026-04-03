@@ -139,9 +139,9 @@
   .our-label { background: linear-gradient(135deg, rgba(255,107,157,0.15), rgba(255,107,157,0.05)); color: var(--hot-pink); }
   .video-container {
     border-radius: 16px; overflow: hidden; margin-bottom: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #f3e8ff; aspect-ratio: 9/14; max-height: 380px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #f3e8ff; aspect-ratio: 9/16; min-height: 480px;
   }
-  .video-container img, .video-container video {
+  .video-container img, .video-container video, .video-container iframe {
     width: 100%; height: 100%; object-fit: cover; border-radius: 16px;
     touch-action: manipulation;
   }
@@ -202,14 +202,14 @@
     .reel-body { padding: 16px; gap: 16px; grid-template-columns: 1fr; }
     .reel-left, .reel-right { padding: 0; }
     .reel-divider { display: none; }
-    .video-container { max-height: 320px; border-radius: 12px; }
+    .video-container { min-height: 400px; border-radius: 12px; }
     .our-description { padding: 12px; }
   }
   @media (max-width: 380px) {
     .name-line { white-space: nowrap; }
   .hero h1 { font-size: 1.7rem; }
     .reel-number { font-size: 1.3rem; }
-    .video-container { max-height: 280px; }
+    .video-container { min-height: 360px; }
   }
 </style>
 </head>
@@ -248,7 +248,7 @@
         <div class="reel-left">
           <div class="section-label ref-label">✨ REFERENCIA ORIGINAL</div>
           <div class="video-container">
-            <img src="assets/thumbnails/Video-42_thumb.png" alt="Referencia Reel 1" loading="lazy">
+            <iframe src="https://www.instagram.com/reel/DTXgtj6jFQa/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy" style="width:100%;height:100%;border:none;border-radius:16px;"></iframe>
           </div>
           <div class="ref-description">Chica sentada en su sofá → texto "No tienes que saber" → aparecen <b>Los Simpsons</b> sentados con ella → sube escaleras con un unicornio fantasma → <b>cena con Ariel de La Sirenita</b>. Showcase de resultados WOW: personajes animados insertados en escenas cotidianas con IA.</div>
         </div>
@@ -274,7 +274,7 @@
         <div class="reel-left">
           <div class="section-label ref-label">✨ REFERENCIA ORIGINAL</div>
           <div class="video-container">
-            <img src="assets/thumbnails/Video-80_thumb.png" alt="Referencia Reel 2" loading="lazy">
+            <iframe src="https://www.instagram.com/reel/DU9BpPaD_YX/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy" style="width:100%;height:100%;border:none;border-radius:16px;"></iframe>
           </div>
           <div class="ref-description">Chica frente a un mural de graffiti con una <b>serpiente real</b> → texto "¿Qué de esto no es real?" → reveal: <b>la gorra es IA</b> → escena con <b>3 elefantes numerados</b> → "Cuál de estos elefantes" es generado por IA. Formato quiz/engagement interactivo.</div>
         </div>
@@ -300,7 +300,7 @@
         <div class="reel-left">
           <div class="section-label ref-label">✨ REFERENCIA ORIGINAL</div>
           <div class="video-container">
-            <img src="assets/thumbnails/Video-155_thumb.png" alt="Referencia Reel 3" loading="lazy">
+            <iframe src="https://www.instagram.com/reel/DVZWb9OD1hn/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy" style="width:100%;height:100%;border:none;border-radius:16px;"></iframe>
           </div>
           <div class="ref-description">Creadora en su cuarto/estudio con luces moradas → "He estado guardando un..." → suspense → va a la cocina → "Después de probar" → <b>botella flotando</b> → objetos moviéndose solos → muestra resultados de <b>efectos IA integrados en escenas cotidianas</b>. Storytelling personal.</div>
         </div>
@@ -326,7 +326,7 @@
         <div class="reel-left">
           <div class="section-label ref-label">✨ REFERENCIA ORIGINAL</div>
           <div class="video-container">
-            <img src="assets/thumbnails/Video-875_thumb.png" alt="Referencia Reel 4" loading="lazy">
+            <iframe src="https://www.instagram.com/reel/DT_OiNrDwKf/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy" style="width:100%;height:100%;border:none;border-radius:16px;"></iframe>
           </div>
           <div class="ref-description">Chica <b>montada a caballo</b> en un campo → texto "No puedes creer" → sentada en <b>silla de playa con coco junto a piscina</b> → "con inteligencia" → reveal: sentada en su <b>backyard real</b> con cerca de madera. Locaciones falsas con IA + <b>glitch/chromatic aberration</b>.</div>
         </div>
@@ -352,7 +352,7 @@
         <div class="reel-left">
           <div class="section-label ref-label">✨ REFERENCIA ORIGINAL</div>
           <div class="video-container">
-            <img src="assets/thumbnails/Video-935_thumb.png" alt="Referencia Reel 5" loading="lazy">
+            <iframe src="https://www.instagram.com/reel/DPMtIeaj6S9/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy" style="width:100%;height:100%;border:none;border-radius:16px;"></iframe>
           </div>
           <div class="ref-description">Mano con <b>uñas moradas</b> pone un <b>pin rojo físico</b> sobre Google Maps en pantalla → <b>Tower Bridge, London</b> → pin se mueve → <b>Duomo di Milano</b>. Ultra corto (9s), satisfactorio, sin narración. Concepto: escoge destino y aparece ahí.</div>
         </div>
@@ -378,7 +378,7 @@
         <div class="reel-left">
           <div class="section-label ref-label">✨ REFERENCIA ORIGINAL</div>
           <div class="video-container">
-            <img src="assets/thumbnails/Video-949_thumb.png" alt="Referencia Reel 6" loading="lazy">
+            <iframe src="https://www.instagram.com/reel/DWGUyF5Ac0D/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy" style="width:100%;height:100%;border:none;border-radius:16px;"></iframe>
           </div>
           <div class="ref-description">Creadora en estudio rosado → texto "Lo que en" → <b>"Hollywood"</b> (texto grande bold) → agarra cámara/tela dramáticamente → "yo lo hice en <b>segundos</b>" → <b>efecto de telequinesis</b> → <b>4 efectos</b> showcase → Hydro Flask en parque otoñal.</div>
         </div>
@@ -404,7 +404,7 @@
         <div class="reel-left">
           <div class="section-label ref-label">✨ REFERENCIA ORIGINAL</div>
           <div class="video-container">
-            <img src="assets/thumbnails/day-in-life_thumb.png" alt="Referencia Reel 7" loading="lazy">
+            <iframe src="https://www.instagram.com/reel/DVwbfnbDibU/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy" style="width:100%;height:100%;border:none;border-radius:16px;"></iframe>
           </div>
           <div class="ref-description">Chico abre con <b>"HOW TO DO THIS..."</b> mostrando un reel viral de travel vlog en <b>picture-in-picture</b> → breakdown de cómo crear <b>transiciones creativas de "day in my life"</b> → muestra app de cámara, cómo grabar clips, cómo editar. Tutorial meta.</div>
         </div>
